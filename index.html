@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title> .:  Calculadora IMC  :.</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div id="telaInicial">
+                <label class="title"> ALTURA </label>
+                <input type="number" id="altura" placeholder="ex.: 1,59">
+                
+                <label class="title"> PESO </label>
+                <input type="number" id="peso" placeholder="ex.: 67">
+                
+                <input type="button" id="btnCalcular" onclick="calcular()" value="CALCULAR">
+            </div>
+
+            <div id="telaResultado">
+                <label class="title result"> RESULTADO </label>
+                <label id="resultado"> </label>
+                                
+                <label class="title result"> CLASSIFICAÇÃO </label>
+                <label id="pesoIdeal"> </label>
+
+                <hr id="cor_class">
+                                
+                <input type="submit" id="btnRetornar" onclick="reset()" value=" RETORNAR">                
+            </div>
+            
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
